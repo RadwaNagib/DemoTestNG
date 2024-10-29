@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests"  preserve-order="true"  verbose="2" >
+
+    <listeners>
+        <listener class-name="Listeners.customListners"/>
+    </listeners>
+    <test name="list" parallel="tests" thread-count="4" >
+        <classes>
+         <class name="Tests.Tc01_searchTest"/>
+        </classes>
+    </test>
+</suite>
